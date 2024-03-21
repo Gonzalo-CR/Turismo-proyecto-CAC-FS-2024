@@ -162,6 +162,11 @@ main {
     border-radius: 20%;
 }
 
+.boton-search {
+    width: 15vw;
+    height: 15vh;
+}
+
 .linkSearch-icon {
     border-radius: 15%;
 }
