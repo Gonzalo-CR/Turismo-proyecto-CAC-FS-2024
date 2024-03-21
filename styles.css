@@ -1,0 +1,498 @@
+
+* {
+    border: 1px dotted  rgba(0, 0, 0, 0) !important;
+    box-sizing: border-box;   
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh auto !important;
+    margin: 0;
+    overflow: auto;
+    background-color: antiquewhite;
+    padding: 5vh 5vw !important;
+}
+
+header { 
+    background-image: url('/img/turismo-urbano.png');
+    background-size: cover; /* Para que la imagen se ajuste al tamaño del header */
+    background-position: center; /* Para centrar la imagen */
+    background-repeat: no-repeat;
+}
+
+nav {
+    height: auto !important;
+    width: auto;
+    display: flexbox;
+    justify-content: space-between 
+}
+
+h1 {
+    text-align: center; 
+    font-size: 1.55em ;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(250, 229, 107);
+    background-size: auto;
+    background-position: absolute;
+    margin: 05% 40%   !important;
+    padding: 1px;
+    width: auto !important;
+    height: auto !important; 
+}
+
+h2, p {
+    text-align: center; 
+    font-size: 1.15em;
+    
+}
+
+main { 
+    background-color: burlywood; 
+}
+
+
+
+.header_box {
+    height: 20% !important;
+    position: sticky;
+    top: 0;
+   /* border: 3px solid orangered !important; */
+    
+
+}
+
+.headerBanner {
+    height: 73.3%;
+    font-size: larger;
+}
+
+.Nav_bar {
+    height: 26.7%;
+    
+}
+
+.headerNav_bar {
+    
+    opacity: 1; 
+    transform: none;
+    background-color: rgb(56, 24, 2);
+}
+
+
+.headerPanels  {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Centra los elementos horizontalmente */
+    margin: 0 auto;
+    align-items: center;
+    overflow: auto;
+    flex-wrap: nowrap;
+
+}
+
+
+.headerPanel-Left {
+    display: flex;
+    justify-content: flex-start; /* Centra los elementos horizontalmente */
+    margin: 0;
+    height: 100%;
+    align-items: center;
+}
+
+.headerMenu {
+    display: flex;
+    justify-content: space-between; /* Centra los elementos horizontalmente */
+    margin: 0 auto;
+    align-items: center;
+    
+}
+
+
+.headerMenu-Explorer {
+    display: flex;
+    justify-content: space-between; /* Centra los elementos horizontalmente */
+    margin: 0 auto;
+    align-items: center ;
+    border: 3% solid #000;
+    background-color: #000;
+    border-radius: 15%;
+    
+}
+
+.explorerItem { 
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 3% solid #00f;
+    background-color: aliceblue;
+    padding: 3;
+    border-radius: 15%;
+
+}
+
+.icono {
+    border-radius: 15.5%;
+  
+}
+
+
+
+.searchItem {
+    display: flex;
+    justify-content: right; /* Centra los elementos horizontalmente */
+    margin: 0 auto;
+    flex-direction: row-reverse;
+    align-items: center;
+    border: 3% solid #000;
+    background-color: #fff;
+    border-radius: 10%;
+    
+
+}
+
+.icon-search {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border-radius: 20%;
+}
+
+.linkSearch-icon {
+    border-radius: 15%;
+}
+
+.headerPanel-Right {
+    display: flex;
+    justify-content: flex-end; /* Centra los elementos horizontalmente */
+    margin: 0;
+    height: 100%;
+    align-items: center;
+}
+
+
+.cambiarLang {
+     display: flex;
+     margin: 0 auto;
+    align-items: center;   
+    border-radius: 10%; 
+}
+
+.flex-medio {
+    display: flex;
+    justify-content: space-between; /* Centra los elementos horizontalmente */
+    align-items: center;
+    flex-wrap: nowrap; /* Centra los elementos horizontalmente */
+    border-radius: 15%;
+}
+
+
+.dropdown-menu {
+    position: absolute; top: 0px; left: 0px; margin: 0px; opacity: 0; pointer-events: none;
+    margin: 0 auto;
+    border-radius: 20%;
+}
+
+
+.menuSeparador { 
+    
+    width: 5%;
+    height: 1px;
+    margin: 0 auto;
+}
+
+.help-menu{ 
+    border-radius: 15%;
+
+}
+
+
+
+/* MAIN */
+
+.main_box {
+    display: flex;
+    overflow: auto;
+    overflow-x: hidden; 
+    flex-grow: 1;   
+    width: 100% !important;
+}
+
+
+
+.main_aside {
+   /* border: 3px solid red !important; */
+    display: flex;
+    flex-direction: row;
+    width: auto; 
+    max-width: 35%;
+    justify-content: center;
+}
+
+
+.aside_box {
+    float: left;
+    width: auto; 
+    height: 100%;
+    overflow: auto;
+    margin-right: 0px; 
+    background-color: cornsilk;
+    align-items: center; 
+    border-radius: 10%;
+} 
+
+
+aside {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 52vh;
+    transition: left 0.5s ease;
+  }
+  
+aside.escondido {
+    left: -100%;
+  }
+  
+.button_aside {
+    position: fixed;
+    left: 0;
+    bottom: 48vh;
+    font-size: x-large;
+    color: rgb(34, 36, 32);
+    background-color: rgb(194, 194, 194);
+    
+
+  }
+  
+
+
+.main_article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-wrap: nowrap; /* Centra los elementos horizontalmente */
+    width: 100% ; ;
+  /*  border: 3px solid rgb(132, 214, 9) !important; */
+    overflow: auto;  
+}
+
+article {
+   width: 100%; 
+   background-color: burlywood;
+}
+
+.article_box {
+    flex-grow: 1;
+    overflow: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* Añade estilos adicionales para el article aquí */
+}
+
+
+
+#slider_box {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    align-items: center;
+}
+
+
+#slider_box2 {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    align-items: center;
+}
+
+
+#slider_box3 {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    align-items: center;
+}
+
+#slider_box4 {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    align-items: center;
+}
+
+
+.slide {
+    flex: 0 0 auto;
+    width: 25vw;
+    height: 25vh;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .slide2 {
+    flex: 0 0 auto;
+    width: 25vw;
+    height: 25vh;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .slide3 {
+    flex: 0 0 auto;
+    width: 25vw;
+    height: 25vh;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .slide4 {
+    flex: 0 0 auto;
+    width: 25vw;
+    height: 25vh;
+    scroll-snap-align: start;           
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  @media (max-width: 600px) {
+    .slide {
+      width: 100vw;
+    }
+    .slide2 {
+        width: 100vw;
+      }
+      .slide3 {
+        width: 100vw;
+      }
+      .slide4 {
+        width: 100vw;
+      }
+  }
+  
+  /* Pantallas medianas: muestra 2 slides a la vez */
+  @media (min-width: 601px) and (max-width: 900px) {
+    .slide {
+      width: 50vw;
+    }
+
+    .slide2 {
+        width: 50vw;
+      }
+
+      .slide3 {
+        width: 50vw;
+      }
+      .slide4 {
+        width: 50vw;
+      }
+
+  }
+  
+  /* Pantallas grandes: muestra 5 slides a la vez */
+  @media (min-width: 901px) {
+    .slide {
+      width: 20vw;
+    }
+
+    .slide2 {
+        width: 20vw;
+      }
+
+      .slide3 {
+        width: 20vw;
+      }
+
+      .slide4 {
+        width: 20vw;
+      }
+  }
+
+
+#QR_descarga {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin: 0 auto;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+
+
+.footer {
+    display: flex;
+    height: 50px;
+    clear: both;
+   /* border: 3px solid blue !important;  Esto evitará que el footer se superponga con el aside */
+    align-items: center;
+    background-color: chartreuse;
+    justify-content: flex-start;
+}
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(225, 8, 8, 0.7); /* Negro semi transparente */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form_box {
+    display: flex;
+    justify-content: center;
+}
+
+.boton_box {
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .instagram-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .instagram-button i {
+    margin-right: 5px;
+  }
+
+
+  .nav-item {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-item:hover {
+    transform: scale(1.05);
+  }
+  
