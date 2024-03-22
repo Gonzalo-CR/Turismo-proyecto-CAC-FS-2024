@@ -470,6 +470,9 @@ article {
 .form_box {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    background-color: grey;
 }
 
 .boton_box {
