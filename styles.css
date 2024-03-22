@@ -163,7 +163,7 @@ main {
 }
 
 .boton-search {
-    width: 15px;
+    width: auto;
     height: 15px;
 }
 
