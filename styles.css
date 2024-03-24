@@ -1,6 +1,38 @@
+/*
+
+
+seleccion de colores
+
+    --color-neutral-800: #343a3d
+
+    background ffff # 
+
+    #footer-page {
+    background-color: #1E1E1F;
+    padding-top: 60px;
+    font-size: 13px;
+    color: #EDEDED;
+
+
+fff7FC
+8B93FF
+5755FE
+FF71CD
+
+
+
+*/
+
+
+
+:root {
+  font-size: 16px;
+  font-family: 'fantasy', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #343a3d;
+}
 
 * {
-    border: 1px dotted  rgba(0, 0, 0, 0) !important;
+    border: 1px dotted  rgba(0, 0, 0,0) !important;
     box-sizing: border-box;   
     margin: 0;
     padding: 0;
@@ -12,15 +44,17 @@ body {
     height: 100vh auto !important;
     margin: 0;
     overflow: auto;
-    background-color: antiquewhite;
+    background-color: #FFF7FC;
     padding: 5vh 5vw !important;
+    
 }
 
 header { 
-    background-image: url('img/turismo-urbano.png');
-    background-size: cover; /* Para que la imagen se ajuste al tamaño del header */
-    background-position: center; /* Para centrar la imagen */
-    background-repeat: no-repeat;
+    /* background-image: url('/img/turismo-urbano.png');
+    background-size: cover;  Para que la imagen se ajuste al tamaño del header 
+    background-position: center;  Para centrar la imagen 
+    background-repeat: no-repeat; */
+    background-color: #8B93FF;
 }
 
 nav {
@@ -32,26 +66,35 @@ nav {
 
 h1 {
     text-align: center; 
-    font-size: 1.55em ;
+    font-size: 3.5rem ;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(250, 229, 107);
+    background-color: #FF71CD;
     background-size: auto;
-    background-position: absolute;
-    margin: 05% 40%   !important;
-    padding: 1px;
+    background-position: relative;
+    margin: 15px 25%   !important;
+    padding: 5px;
     width: auto !important;
     height: auto !important; 
+    color: #FAF8F1;
+    
 }
 
 h2, p {
     text-align: center; 
-    font-size: 1.15em;
+    font-size: 1.15rem;
     
 }
 
 main { 
-    background-color: burlywood; 
+    background-color: #FFF7FC; 
+}
+
+
+
+article {
+  width: 100%; 
+  background-color: #FFF7FC;
 }
 
 
@@ -63,6 +106,16 @@ main {
    /* border: 3px solid orangered !important; */
     
 
+}
+
+.home_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: auto !important;
+    width: auto;
+  background-color: #8B93FF;
 }
 
 .headerBanner {
@@ -79,7 +132,8 @@ main {
     
     opacity: 1; 
     transform: none;
-    background-color: rgb(56, 24, 2);
+    background-color: #5755FE;
+    border-radius: 5%;
 }
 
 
@@ -103,6 +157,13 @@ main {
     align-items: center;
 }
 
+.home-logo {
+  display: flex;
+  align-items: center;
+  border-radius: 25%;
+  justify-content: space-between;
+}
+
 .headerMenu {
     display: flex;
     justify-content: space-between; /* Centra los elementos horizontalmente */
@@ -114,12 +175,12 @@ main {
 
 .headerMenu-Explorer {
     display: flex;
+    position: relative;
     justify-content: space-between; /* Centra los elementos horizontalmente */
     margin: 0 auto;
     align-items: center ;
-    border: 3% solid #000;
-    background-color: #000;
-    border-radius: 15%;
+    border-radius: 25%;
+    
     
 }
 
@@ -127,11 +188,18 @@ main {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    border: 3% solid #00f;
-    background-color: aliceblue;
-    padding: 3;
-    border-radius: 15%;
+    /* border: 3% solid #7743DB; */
+    background-color: whitesmoke;
+    border-radius: 5%;
+    
+    
 
+}
+
+.icon-chevron-down {
+  display: flex;
+  align-items: center;
+  border-radius: 25%;
 }
 
 .icono {
@@ -139,62 +207,89 @@ main {
   
 }
 
-
+.headerMenu-Search {
+  display: flex;
+  justify-content: start;
+  margin: 0 auto;
+  align-items: center ;
+  border-radius: 1%;
+}
 
 .searchItem {
     display: flex;
-    justify-content: right; /* Centra los elementos horizontalmente */
+    justify-content: left; /* Centra los elementos horizontalmente */
     margin: 0 auto;
-    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    flex-direction: row;
     align-items: center;
-    border: 3% solid #000;
-    background-color: #fff;
-    border-radius: 10%;
+    /* border: 3% solid #7743DB; */
+    background-color: #fff7FC;
+    border-radius: 5%;
+    height: auto !important;
+
     
 
 }
 
 .icon-search {
     display: flex;
-    align-items: center;
-    width: auto;
+    align-items: center;    width: auto;
     height: auto;
-    border-radius: 20%;
+    border-radius: 25%;
+     
 }
 
 .boton-search {
-    width: auto;
-    height: 15px;
+  width: auto;
+  height: 15px;
 }
 
 .linkSearch-icon {
-    border-radius: 15%;
+    border-radius: 25%;
 }
+
+.headerSearch-input { 
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  border-radius: 5%;
+}
+
 
 .headerPanel-Right {
     display: flex;
     justify-content: flex-end; /* Centra los elementos horizontalmente */
-    margin: 0;
+    /* margin: 0; */
     height: 100%;
     align-items: center;
 }
 
 
 .cambiarLang {
-     display: flex;
-     margin: 0 auto;
+    display: flex;
+    /* margin: 0 auto; */
     align-items: center;   
     border-radius: 10%; 
+    font-size: 0.7rem;
+    width: auto;
+    flex-wrap: nowrap;
 }
 
 .flex-medio {
     display: flex;
-    justify-content: space-between; /* Centra los elementos horizontalmente */
+    justify-content: flex-end; /* Centra los elementos horizontalmente */
     align-items: center;
     flex-wrap: nowrap; /* Centra los elementos horizontalmente */
     border-radius: 15%;
 }
-
+/* 
+.idioma-text {
+  display: flex;
+  align-items: center;
+  border-radius: 25%;
+  flex-wrap: nowrap;
+} */
 
 .dropdown-menu {
     position: absolute; top: 0px; left: 0px; margin: 0px; opacity: 0; pointer-events: none;
@@ -206,7 +301,7 @@ main {
 .menuSeparador { 
     
     width: 5%;
-    height: 1px;
+    height: 1%;
     margin: 0 auto;
 }
 
@@ -214,6 +309,46 @@ main {
     border-radius: 15%;
 
 }
+
+#menuPanel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: auto!important;
+    width: auto;
+  background-color: #8B93FF;
+}
+
+
+.form_horizontal {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+    top: 100%;
+  width: 100%;
+  height: 20%;
+  background-color: #FF71CD;
+  transition: top 0.5s ease;
+  border-radius: 5%;
+  align-items: center;
+}
+
+.form_horizontal.mostrar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.anchor {
+  text-decoration: none;
+  text-shadow: #343a3d;
+  font-size: 20px;
+  color: #fff7FC;
+  padding: 10px;
+}
+
 
 
 
@@ -240,24 +375,24 @@ main {
 
 
 .aside_box {
-    float: left;
+    float: inline-start;
     width: auto; 
     height: 100%;
     overflow: auto;
     margin-right: 0px; 
-    background-color: cornsilk;
+    background-color: #FF71CD;
     align-items: center; 
     border-radius: 10%;
 } 
 
-
 aside {
-    display: flex;
-    position: fixed;
-    left: 0;
-    bottom: 52vh;
-    transition: left 0.5s ease;
-  }
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 52vh;
+  transition: left 0.5s ease;
+}
+
   
 aside.escondido {
     left: -100%;
@@ -286,10 +421,7 @@ aside.escondido {
     overflow: auto;  
 }
 
-article {
-   width: 100%; 
-   background-color: burlywood;
-}
+
 
 .article_box {
     flex-grow: 1;
@@ -434,22 +566,15 @@ article {
     align-items: center;
 }
 
-#form-search {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-    background-color: grey;
-}
 
 
-.footer {
+footer {
     display: flex;
     height: 50px;
     clear: both;
    /* border: 3px solid blue !important;  Esto evitará que el footer se superponga con el aside */
     align-items: center;
-    background-color: chartreuse;
+    background-color: #5755FE;
     justify-content: flex-start;
 }
 
@@ -470,9 +595,6 @@ article {
 .form_box {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-    background-color: grey;
 }
 
 .boton_box {
