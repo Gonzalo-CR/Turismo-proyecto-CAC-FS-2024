@@ -1,29 +1,16 @@
 /*
-
-
 seleccion de colores
 
     --color-neutral-800: #343a3d
 
     background ffff # 
 
-    #footer-page {
-    background-color: #1E1E1F;
-    padding-top: 60px;
-    font-size: 13px;
-    color: #EDEDED;
-
-
+   
 fff7FC
 8B93FF
 5755FE
 FF71CD
-
-
-
 */
-
-
 
 :root {
   font-size: 16px;
@@ -39,29 +26,113 @@ FF71CD
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh auto !important;
-    margin: 0;
-    overflow: auto;
-    background-color: #FFF7FC;
-    padding: 5vh 5vw !important;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  overflow: auto;
+  background-color: #FFF7FC;
+  padding: 3vh 4vw !important;
     
-}
+} 
 
 header { 
-    /* background-image: url('/img/turismo-urbano.png');
-    background-size: cover;  Para que la imagen se ajuste al tamaño del header 
-    background-position: center;  Para centrar la imagen 
-    background-repeat: no-repeat; */
-    background-color: #8B93FF;
+  background-color: #8B93FF;
+  top: 0;
+  border-radius: 0.5em ;
 }
 
-nav {
-    height: auto !important;
-    width: auto;
-    display: flexbox;
-    justify-content: space-between 
+.header_box {
+  color: #343a3d;
+}
+
+.home_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: auto !important;
+  width: auto;
+  background-color: #8B93FF;
+}
+
+.home-logo {
+  display: flex;
+  align-items: center;
+  border-radius: 2.5em;
+  justify-content: space-between;
+}
+
+.homePanel-Right {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+}
+
+.btn-Lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  border-radius: 0.5em; 
+  font-size: 0.7rem;
+  height: 100%;
+  width: auto;
+  flex-wrap: nowrap;
+}
+
+.btn-Lang-Box {
+  display: flex;
+  justify-content: flex-end; /* Centra los elementos horizontalmente */
+  align-items: center;
+  flex-wrap: nowrap; /* Centra los elementos horizontalmente */
+  border-radius: 0.001em;
+  height: 100%;
+  width: auto;
+}
+ 
+.idioma-text {
+text-align: justify; 
+display: flex;
+align-items: center;
+border-radius:  0.001em;
+flex-wrap: nowrap;
+white-space: nowrap;
+height: 100%;
+width: auto;
+} 
+
+/* 
+.dropdown-menu {
+  position: absolute; top: 0px; left: 0px; margin: 0px; opacity: 0; pointer-events: none;
+  margin: 0 auto;
+  border-radius: 1em;
+}
+*/
+
+.help-menu{ 
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.help-menu-btn{ 
+  border-radius: 0.0001em ;
+  height: 100%;
+  width: auto;
+
+}
+
+.help-menu-img{ 
+  border-radius: 2.5em;
+
+}
+
+
+.headerBanner {
+  height: 73.3%;
+  
 }
 
 h1 {
@@ -71,24 +142,184 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
     background-color: #FF71CD;
     background-size: auto;
-    background-position: relative;
+    /* background-position: center; */
     margin: 15px 25%   !important;
     padding: 5px;
     width: auto !important;
     height: auto !important; 
     color: #FAF8F1;
+    border-radius: 1em;
     
 }
 
-h2, p {
-    text-align: center; 
-    font-size: 1.15rem;
-    
+
+
+
+/*  BARRA DE NAVEGACION */ 
+
+
+
+.Nav_bar {
+  height: 26.7%;
+  position: sticky;
+  top: 0;
 }
+
+.headerNav_bar {
+  height: auto !important;
+  width: auto;
+  display: flexbox;
+  justify-content: space-between ;
+  background-color: #5755FE;
+  border-radius: 0.5em;
+  margin: 0.5em;
+}
+
+.headerPanels  {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  height: 100%;
+  align-items: center;
+  flex-wrap: nowrap;
+
+}
+
+
+.headerPanel-Left {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  width: auto;
+  align-items: center;
+}
+
+
+.headerMenu {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+
+.headerMenu-Explorer {
+  display: flex;
+  position: relative;
+  justify-content: space-between; /* Centra los elementos horizontalmente */
+  align-items: center ;
+  border-radius: 0.5em;
+  padding: 0.05em;
+  width: 100%;
+}
+
+.explorerItem { 
+  display: flex;
+  justify-content: space-around;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 0.5em;
+  text-decoration: none;
+  color: #1E1E1F;
+  margin: 0.25em;
+}
+
+.icon-chevron-down {
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 1.5em;
+}
+
+.icono {
+  border-radius: 15.5%;
+}
+
+
+.headerMenu-Search {
+  display: flex;
+  justify-content: space-around;
+  align-items: center ;
+  border-radius: 0.5em;
+}
+
+.searchItem {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: row;
+  background-color: #fff7FC;
+  border-radius: 0.5em;
+  height: auto !important;
+}
+
+.icon-search {
+    display: flex;
+    align-items: center;    
+    border-radius: 2.5em;
+     
+}
+
+.boton-search {
+  width: auto;
+  height: 15px;
+}
+
+.searchButton {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: auto;
+  border-radius: 0.5em;
+}
+
+.headerSearch-input { 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: auto;
+  border-radius: 0.5em;
+}
+
+
+
+
+/*  MAIN  */
+
+
 
 main { 
     background-color: #FFF7FC; 
 }
+
+.h2-article {
+  text-align: center; 
+  font-size: 1.5rem;
+  background-color: #FF71CD;
+  background-size: auto;
+  margin: 50px 15%   !important;
+  padding: 5px;
+  width: auto !important;
+  height: auto !important; 
+  color: #FFF7FC;
+  text-shadow: 1px 1px 1px #444, -1px -1px #999;
+  box-shadow: 5px 5px 2.5px #1E1E1F;
+  border-radius: 1em;
+}
+
+h2, p {
+  text-align: center; 
+  font-size: 1rem;
+  
+}
+  
 
 
 
@@ -99,203 +330,28 @@ article {
 
 
 
-.header_box {
-    height: 20% !important;
-    position: sticky;
-    top: 0;
-   /* border: 3px solid orangered !important; */
-    
-
-}
-
-.home_nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  height: auto !important;
-    width: auto;
-  background-color: #8B93FF;
-}
-
-.headerBanner {
-    height: 73.3%;
-    font-size: larger;
-}
-
-.Nav_bar {
-    height: 26.7%;
-    
-}
-
-.headerNav_bar {
-    
-    opacity: 1; 
-    transform: none;
-    background-color: #5755FE;
-    border-radius: 5%;
-}
 
 
-.headerPanels  {
-    display: flex;
-    justify-content: space-between;
-    width: 100%; /* Centra los elementos horizontalmente */
-    margin: 0 auto;
-    align-items: center;
-    overflow: auto;
-    flex-wrap: nowrap;
-
-}
 
 
-.headerPanel-Left {
-    display: flex;
-    justify-content: flex-start; /* Centra los elementos horizontalmente */
-    margin: 0;
-    height: 100%;
-    align-items: center;
-}
-
-.home-logo {
-  display: flex;
-  align-items: center;
-  border-radius: 25%;
-  justify-content: space-between;
-}
-
-.headerMenu {
-    display: flex;
-    justify-content: space-between; /* Centra los elementos horizontalmente */
-    margin: 0 auto;
-    align-items: center;
-    
-}
 
 
-.headerMenu-Explorer {
-    display: flex;
-    position: relative;
-    justify-content: space-between; /* Centra los elementos horizontalmente */
-    margin: 0 auto;
-    align-items: center ;
-    border-radius: 25%;
-    
-    
-}
 
-.explorerItem { 
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    /* border: 3% solid #7743DB; */
-    background-color: whitesmoke;
-    border-radius: 5%;
-    
-    
-
-}
-
-.icon-chevron-down {
-  display: flex;
-  align-items: center;
-  border-radius: 25%;
-}
-
-.icono {
-    border-radius: 15.5%;
-  
-}
-
-.headerMenu-Search {
-  display: flex;
-  justify-content: start;
-  margin: 0 auto;
-  align-items: center ;
-  border-radius: 1%;
-}
-
-.searchItem {
-    display: flex;
-    justify-content: left; /* Centra los elementos horizontalmente */
-    margin: 0 auto;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-    /* border: 3% solid #7743DB; */
-    background-color: #fff7FC;
-    border-radius: 5%;
-    height: auto !important;
-
-    
-
-}
-
-.icon-search {
-    display: flex;
-    align-items: center;    width: auto;
-    height: auto;
-    border-radius: 25%;
-     
-}
-
-.boton-search {
-  width: auto;
-  height: 15px;
-}
-
-.linkSearch-icon {
-    border-radius: 25%;
-}
-
-.headerSearch-input { 
-  display: flex;
-  align-items: center;
-  width: auto;
-  height: auto;
-  border-radius: 5%;
-}
 
 
 .headerPanel-Right {
-    display: flex;
-    justify-content: flex-end; /* Centra los elementos horizontalmente */
-    /* margin: 0; */
-    height: 100%;
-    align-items: center;
-}
-
-
-.cambiarLang {
-    display: flex;
-    /* margin: 0 auto; */
-    align-items: center;   
-    border-radius: 10%; 
-    font-size: 0.7rem;
-    width: auto;
-    flex-wrap: nowrap;
-}
-
-.flex-medio {
-    display: flex;
-    justify-content: flex-end; /* Centra los elementos horizontalmente */
-    align-items: center;
-    flex-wrap: nowrap; /* Centra los elementos horizontalmente */
-    border-radius: 15%;
-}
-/* 
-.idioma-text {
   display: flex;
+  justify-content: flex-end; /* Centra los elementos horizontalmente */
+  /* margin: 0; */
+  height: 100%;
   align-items: center;
-  border-radius: 25%;
-  flex-wrap: nowrap;
-} */
-
-.dropdown-menu {
-    position: absolute; top: 0px; left: 0px; margin: 0px; opacity: 0; pointer-events: none;
-    margin: 0 auto;
-    border-radius: 20%;
 }
+
+
+
+
+
+
 
 
 .menuSeparador { 
@@ -305,10 +361,7 @@ article {
     margin: 0 auto;
 }
 
-.help-menu{ 
-    border-radius: 15%;
 
-}
 
 #menuPanel {
   display: flex;
@@ -316,8 +369,8 @@ article {
   align-items: center;
   flex-wrap: nowrap;
   height: auto!important;
-    width: auto;
-  background-color: #8B93FF;
+  width: auto;
+  /* background-color: #8B93FF; */
 }
 
 
@@ -325,12 +378,12 @@ article {
   display: flex;
   justify-content: space-around;
   position: absolute;
-    top: 100%;
-  width: 100%;
-  height: 20%;
+  top: 100%;
+  width: 98%;
+  height: 50%;
   background-color: #FF71CD;
   transition: top 0.5s ease;
-  border-radius: 5%;
+  border-radius: 0.5em;
   align-items: center;
 }
 
@@ -338,7 +391,7 @@ article {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 10px;
+  padding: 0.5em 0.5em;
 }
 
 .anchor {
@@ -632,4 +685,11 @@ footer {
   .nav-item:hover {
     transform: scale(1.05);
   }
-  
+
+
+  #footer-page {
+    background-color: #1E1E1F;
+    padding: 3em;
+    font-size: 13px;
+    color: #EDEDED;
+  }
