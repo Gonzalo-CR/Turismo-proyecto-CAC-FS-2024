@@ -27,6 +27,7 @@ FF71CD
 body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 0;
   height: auto;
   overflow: auto;
