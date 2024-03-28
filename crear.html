@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aventurismo</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="shortcut icon" href="img/maya.ico" type="image/x-icon">
+    <style>
+        #loginForm {
+            display: none;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#loginButton").click(function(){
+                $("#loginForm").slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- HEADER -->
+
+<!-- HEADER -->
+
+<header>
+    <div class="header_box">
+        <!-- HOME NAV  -->
+        <div class="home_nav">
+            <!-- logo HOME -->
+            <a href="/" class="home-logo">
+                <img class="home-logo" src="img/tutu-Logo-FAKE.png" width="50px" height="50px" alt="Go Home" title="Go Home">
+            </a>
+            <div class="homePanel-Right">
+                <!-- LENGUAJE MENU -->
+                <div class="languajeMenu nav-item">
+                    <button id="btn-Lang" class="btn-Lang" aria-haspopup="true" aria-expanded="false" type="button"  >
+                        <div class="btn-Lang-Box">
+                            <img src="img/icon-languaje.png" width="auto" height="25px" alt="Cambiar Idioma">
+                            <span class="menuSeparador"></span>
+                            <div class="idioma-text"></div>
+                        </div>
+                    </button>
+
+                <div class="dropdown-menu" x-placement="bottom-end" aria-labelledby="" >Elija el idioma <br><hr>
+                    <a class="dropdown-item langItem" href="#" role="button"  >EN (ingles)
+                    </a><br>
+                    <a class="selected dropdown-item langItem" href="#" role="button"  >ES (español)
+                    </a><br>
+                    <a class="dropdown-item langItem" href="#" role="button"  >CH (chino)
+                    </a><br>
+                    <a class="dropdown-item langItem" href="#" role="button"  >PT (portugues)
+                    </a>
+                </div> 
+
+                </div>
+                <span class="menuSeparador"></span>
+                <!-- HELP MENU -->
+                <div class="help-menu nav-item">
+                    <button class="help-menu" type="button" id="help-menu-button">
+                        <img class="help-menu" id="helpMenu-icon" src="img/icon-menu.png" width="auto" height="25px" alt="Chatbot">
+                    </button>
+                </div>
+                <span class="menuSeparador"></span>
+            </div>
+        </div>
+        <!-- HEADER BANNER -->
+        <div class="headerBanner">
+            <h1>Aventurismo</h1>
+            <!-- <img src="" alt=""> -->
+        </div>
+    </div>  
+</header>
+
+
+<!-- BARRA DE NAVEGACION -->
+
+
+<div class="Nav_bar">
+    <!-- NAV BAR (headerNav_bar) -->
+    <nav id="headerNav_bar" class="headerNav_bar" role="navigation"  >
+        <div class="headerPanels">
+            <!-- PANEL IZQUIERDO DE LA BARRA DE NAVEGACIÓN -->
+            <div class="headerPanel-Left">
+                <!-- HEADER MENU -->
+                <div class="headerMenu">
+                    <!-- HEADER MENU_EXPLORER -->
+                    <div class="headerMenu-Explorer">
+                        <a id="explorerItem" class="explorerItem nav-item" href="#">
+                            <img class="explorerItem icono" src="img/menuItem.png" width="15px" height="15px" alt="Explore" title="Explore">
+                            Explorar
+                            <span class="icon-chevron-down icono"> 
+                                <img src="img/icon-chevron-down.png" width="15px" height="15px" alt="MEnu-desplegable">
+                            </span>
+                        </a>
+                    </div>
+                    <span class="menuSeparador"></span>
+                        
+                
+                    <!-- HEADER MENU_SEARCh -->
+                    <div class="headerMenu-Search">
+                        <div class="searchItem">
+                            <button class="searchButton" type="button" aria-label="Search" >
+                                <span class="icon-search nav-item"> 
+                                    <img src="img/icon-search.png" width="15px" height="15px" alt="Lupita"> 
+                                </span>
+                            </button>
+                            <input id="search-input" class="headerSearch-input" type="search" placeholder="Buscar aquí" required autocomplete="off" aria-autocomplete="both" aria-labelledby="" autocorrect="off" enterkeyhint="go" spellcheck="false" aria-activedescendant="" aria-controls="" value=""   >
+                        </div>
+                    </div>
+                </div>
+            </div>
+                 <!-- PANEL DERECHO DE LA BARRA DE NAVEGACIÓN -->
+                    <div class="headerPanel-Right">
+                    </div>
+                    <span class="menuSeparador"></span>
+                    <div class="inicio-sesion" >
+                        <button id="loginButton" class="inicio-sesion-boton instagram-button" type="button">
+                            <i class="fa fa-home"></i>Inicio
+                        </button>
+                        <div id="loginForm">
+                            <form action="/login" method="post">
+                                <label for="username">Usuario:</label><br>
+                                <input type="text" id="username" name="username" required><br>
+                                <label for="password">Contraseña:</label><br>
+                                <input type="password" id="password" name="password" requiered><br><br>
+                                <input type="submit" value="Iniciar sesión">
+                            </form>
+                            <br>
+                            <div id="crearuser">
+                            <a href="/forgot-password">¿Olvidaste tu contraseña?</a><br>
+                            <a href="crear-usuario.html" target="_blank">Crear Usuario</a>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+                    <div id="menuPanel">
+                        <div class="panel_desplegable" id="paneldesplegable">
+                            <a href="panel.html" class="anchor" target="_blank" >Panel</a>
+                            <a href="crear.html" class="anchor" target="_blank" >Crear</a>
+                            <a href="buscar.html" class="anchor" target="_blank" >Buscar</a>
+                            <a href="servicios.html" class="anchor" target="_blank" >Servicios</a>
+                            <a href="news.html" class="anchor" target="_blank" >News</a>
+                            <a href="blog.html" class="anchor" target="_blank" >Blog</a>
+                            <a href="ayuda.html" class="anchor"  target="_blank" >Ayuda</a>
+                        </div>
+                    </div>
+    </nav>
+</div>
+
+    <!-- MAIN -->
+    
+    
+    <main>
+        <div class="main_box">
+            <div class="main_article">
+                <article id="main_article">
+                     <div class="article_box">
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+
+<!-- FOOTER -->
+
+
+<footer id="footer-page">
+    <p>
+        &copy; Tu-Turismo
+    </p>
+</footer>
+
+<!-- BOTON FLOTANTO VOLVER A ARRIBA -->
+
+
+<button id="back-to-top" class="nav-item">Volver a Arriba</button>
+
+<script src="JS/boton.js"></script>
+<script src="JS/sliderPrevNext.js"></script>
+<script src="JS/logmain.js"></script>
+<script src="JS/paneldesplegable.js" ></script>
+<script src="JS/loginForm.js"></script>
+<script src="JS/langmenu.js"></script>
+
+
+</body>
+</html>

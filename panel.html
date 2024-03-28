@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aventurismo</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="shortcut icon" href="img/maya.ico" type="image/x-icon">
+    <style>
+        #loginForm {
+            display: none;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#loginButton").click(function(){
+                $("#loginForm").slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- HEADER -->
+
+ <!-- HEADER -->
+
+ <header>
+    <div class="header_box">
+        <!-- HOME NAV  -->
+        <div class="home_nav">
+            <!-- logo HOME -->
+            <a href="/" class="home-logo">
+                <img class="home-logo" src="img/tutu-Logo-FAKE.png" width="50px" height="50px" alt="Go Home" title="Go Home">
+            </a>
+            <div class="homePanel-Right">
+                <!-- LENGUAJE MENU -->
+                <div class="languajeMenu nav-item">
+                    <button id="btn-Lang" class="btn-Lang" aria-haspopup="true" aria-expanded="false" type="button"  >
+                        <div class="btn-Lang-Box">
+                            <img src="img/icon-languaje.png" width="auto" height="25px" alt="Cambiar Idioma">
+                            <span class="menuSeparador"></span>
+                            <div class="idioma-text"></div>
+                        </div>
+                    </button>
+
+                <div class="dropdown-menu" x-placement="bottom-end" aria-labelledby="" >Elija el idioma <br><hr>
+                    <a class="dropdown-item langItem" href="#" role="button"  >EN (ingles)
+                    </a><br>
+                    <a class="selected dropdown-item langItem" href="#" role="button"  >ES (español)
+                    </a><br>
+                    <a class="dropdown-item langItem" href="#" role="button"  >CH (chino)
+                    </a><br>
+                    <a class="dropdown-item langItem" href="#" role="button"  >PT (portugues)
+                    </a>
+                </div> 
+
+                </div>
+                <span class="menuSeparador"></span>
+                <!-- HELP MENU -->
+                <div class="help-menu nav-item">
+                    <button class="help-menu" type="button" id="help-menu-button">
+                        <img class="help-menu" id="helpMenu-icon" src="img/icon-menu.png" width="auto" height="25px" alt="Chatbot">
+                    </button>
+                </div>
+                <span class="menuSeparador"></span>
+            </div>
+        </div>
+        <!-- HEADER BANNER -->
+        <div class="headerBanner">
+            <h1>Aventurismo</h1>
+            <!-- <img src="" alt=""> -->
+        </div>
+    </div>  
+</header>
+
+
+<!-- BARRA DE NAVEGACION -->
+
+
+<div class="Nav_bar">
+    <!-- NAV BAR (headerNav_bar) -->
+    <nav id="headerNav_bar" class="headerNav_bar" role="navigation"  >
+        <div class="headerPanels">
+            <!-- PANEL IZQUIERDO DE LA BARRA DE NAVEGACIÓN -->
+            <div class="headerPanel-Left">
+                <!-- HEADER MENU -->
+                <div class="headerMenu">
+                    <!-- HEADER MENU_EXPLORER -->
+                    <div class="headerMenu-Explorer">
+                        <a id="explorerItem" class="explorerItem nav-item" href="#">
+                            <img class="explorerItem icono" src="img/menuItem.png" width="15px" height="15px" alt="Explore" title="Explore">
+                            Explorar
+                            <span class="icon-chevron-down icono"> 
+                                <img src="img/icon-chevron-down.png" width="15px" height="15px" alt="MEnu-desplegable">
+                            </span>
+                        </a>
+                    </div>
+                    <span class="menuSeparador"></span>
+                        
+                
+                    <!-- HEADER MENU_SEARCh -->
+                    <div class="headerMenu-Search">
+                        <div class="searchItem">
+                            <button class="searchButton" type="button" aria-label="Search" >
+                                <span class="icon-search nav-item"> 
+                                    <img src="img/icon-search.png" width="15px" height="15px" alt="Lupita"> 
+                                </span>
+                            </button>
+                            <input id="search-input" class="headerSearch-input" type="search" placeholder="Buscar aquí" required autocomplete="off" aria-autocomplete="both" aria-labelledby="" autocorrect="off" enterkeyhint="go" spellcheck="false" aria-activedescendant="" aria-controls="" value=""   >
+                        </div>
+                    </div>
+                </div>
+            </div>
+                 <!-- PANEL DERECHO DE LA BARRA DE NAVEGACIÓN -->
+                    <div class="headerPanel-Right">
+                    </div>
+                    <span class="menuSeparador"></span>
+                    <div class="inicio-sesion" >
+                        <button id="loginButton" class="inicio-sesion-boton instagram-button" type="button">
+                            <i class="fa fa-home"></i>Inicio
+                        </button>
+                        <div id="loginForm">
+                            <form action="/login" method="post">
+                                <label for="username">Usuario:</label><br>
+                                <input type="text" id="username" name="username" required><br>
+                                <label for="password">Contraseña:</label><br>
+                                <input type="password" id="password" name="password" requiered><br><br>
+                                <input type="submit" value="Iniciar sesión">
+                            </form>
+                            <br>
+                            <div id="crearuser">
+                            <a href="/forgot-password">¿Olvidaste tu contraseña?</a><br>
+                            <a href="crear-usuario.html" target="_blank">Crear Usuario</a>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+                    <div id="menuPanel">
+                        <div class="panel_desplegable" id="paneldesplegable">
+                            <a href="panel.html" class="anchor" target="_blank" >Panel</a>
+                            <a href="crear.html" class="anchor" target="_blank" >Crear</a>
+                            <a href="buscar.html" class="anchor" target="_blank" >Buscar</a>
+                            <a href="servicios.html" class="anchor" target="_blank" >Servicios</a>
+                            <a href="news.html" class="anchor" target="_blank" >News</a>
+                            <a href="blog.html" class="anchor" target="_blank" >Blog</a>
+                            <a href="ayuda.html" class="anchor"  target="_blank" >Ayuda</a>
+                        </div>
+                    </div>
+    </nav>
+</div>
+
+
+
+    <!-- MAIN -->
+    
+    
+    <main>
+        <div class="main_box">
+            <div class="main_article">
+                <article id="main_article">
+                     <div class="article_box">
+                         <div class="article_title">
+                             <h2 class="h2-article">Aventurismo</h2>
+                         </div>
+                         <div class="article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero neque exercitationem molestiae illo sit nostrum illum voluptatem animi nisi placeat amet, ratione molestias eos laboriosam officia unde. Esse placeat voluptas doloribus ratione accusantium recusandae harum quidem magni neque ullam nostrum assumenda consectetur optio excepturi possimus molestiae cumque eos non expedita illo, perspiciatis dicta necessitatibus suscipit. Mollitia aliquid obcaecati, porro recusandae cum a voluptatibus quas numquam cumque. Deserunt, impedit, velit neque alias similique perferendis, ipsum dicta asperiores nostrum quis dignissimos magni. Ipsa, tempore nemo odio, sed nostrum ab molestias optio odit quisquam cupiditate sunt. Ab iste tempora aliquam et hic, numquam, doloremque dolore modi quis natus molestiae placeat optio cum quam architecto deleniti omnis doloribus. Quam in itaque consequatur ducimus sunt neque pariatur repellat mollitia, alias facere sequi quos nobis nemo voluptates magni saepe qui a, id doloribus perferendis, reiciendis enim. Corrupti cum, sapiente a, placeat, accusamus magnam fugit similique inventore delectus omnis aut. Reiciendis nihil id modi ut ducimus officia eos veniam autem incidunt facilis similique tenetur repellat dicta tempora maiores corporis possimus velit expedita, dolor provident voluptatum, non magnam obcaecati? Voluptatem corporis iure sapiente consequatur praesentium, laudantium accusantium tempora labore dolores earum fuga commodi molestias libero nostrum repudiandae aliquid deserunt vel ipsam ullam nulla reiciendis modi magnam deleniti. Recusandae necessitatibus reiciendis dolorum fuga! Voluptate iure maiores dolores ut architecto blanditiis, ad ipsam, quos consequuntur commodi iusto illum illo facere. Doloribus placeat sint expedita distinctio ab odit molestiae, laudantium asperiores harum recusandae facilis inventore velit, et corrupti delectus vitae, magni excepturi laborum voluptate? Fugit debitis asperiores obcaecati magnam ab ea amet adipisci! Incidunt suscipit tempora ipsum quae odit cupiditate minima quasi dolorem soluta exercitationem possimus aut dolore praesentium velit laborum totam corrupti doloremque sit ut eligendi, error quibusdam, maxime illum. Eaque vitae adipisci laboriosam, quasi temporibus aperiam? Quam facilis voluptatem magni consequatur molestias rem tenetur exercitationem. Ex, illum suscipit. Distinctio sint aut quas, quo iste labore! Necessitatibus eaque magnam ducimus, distinctio dolor ullam sunt id et quas nostrum itaque quo deleniti eveniet sed repellendus eum doloribus. Architecto saepe sapiente distinctio officia pariatur nemo quia aperiam, rem, vitae suscipit modi incidunt sed, quos qui est placeat voluptatum fugiat. Ducimus quas, voluptatibus nisi doloremque facere doloribus reiciendis repudiandae harum distinctio! Aliquid esse at maiores, quis tempore animi nemo dolore eum possimus aperiam, pariatur velit reiciendis incidunt magnam provident excepturi laboriosam assumenda aliquam! Optio dolor odit hic at numquam quae nisi ex impedit dolore? Natus provident culpa beatae voluptate tempora odio laboriosam praesentium nihil eius vitae earum sed unde corporis ad illo rem quos cum molestiae voluptates perferendis tenetur, doloremque porro nobis blanditiis! Dolore alias explicabo dolorem nesciunt repudiandae, eaque odio aperiam doloremque iure earum laboriosam corrupti est dolores asperiores, amet corporis autem at tempore ipsum enim rerum magnam fugiat repellat ad. Officiis autem corporis minus praesentium aspernatur voluptates maxime ea iusto asperiores nam doloribus necessitatibus, consequatur esse. Id, debitis. Inventore blanditiis ducimus, optio quis sed eius reprehenderit, dolores suscipit quaerat veniam nam rem mollitia quod reiciendis officiis, eligendi amet id corrupti harum?</div>
+
+                             
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+
+<!-- FOOTER -->
+
+
+<footer id="footer-page">
+    <p>
+        &copy; Tu-Turismo
+    </p>
+</footer>
+
+<!-- BOTON FLOTANTO VOLVER A ARRIBA -->
+
+
+<button id="back-to-top" class="nav-item">Volver a Arriba</button>
+
+<script src="JS/boton.js"></script>
+<script src="JS/sliderPrevNext.js"></script>
+<script src="JS/logmain.js"></script>
+<script src="JS/paneldesplegable.js" ></script>
+<script src="JS/loginForm.js"></script>
+<script src="JS/langmenu.js"></script>
+
+
+</body>
+</html>
