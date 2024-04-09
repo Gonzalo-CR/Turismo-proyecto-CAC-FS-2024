@@ -30,6 +30,7 @@ body {
   justify-content: center;
   margin: 0;
   height: auto;
+  min-width: 300px;
   overflow: auto;
   background-color: #FFF7FC;
   padding: 3vh 4vw !important;
@@ -174,7 +175,7 @@ h1 {
   align-items: center;
   flex-wrap: nowrap;
   text-align: center; 
-  font-size: 3.5vw ;
+  font-size: 3.5vw;
   font-weight: bold;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
@@ -218,13 +219,46 @@ h1 {
 .headerPanels  {
   display: flex;
   justify-content: space-between;
-  width: 100%; 
+  width: auto !important; 
   height: 100%;
   align-items: center;
   flex-wrap: nowrap;
+  /* overflow: auto; */
+
 
 }
 
+@media (min-width: 481px) {
+  .smallMenu-Explorer {
+    display: none !important;
+  }
+   
+}
+
+@media (max-width: 480px) {
+  .smallMenu-Explorer {
+    display: block !important;
+  }
+
+  .headerMenu-Explorer {
+    display: none !important;
+  }
+
+  .headerMenu-Search {
+  display: none !important;
+  }
+
+  
+  .panel_desplegable {
+    display: flex;
+    flex-direction: column;
+    height: auto!important;
+    max-width: 20vw;
+    position: relative;
+    left: 0%;
+  }
+
+}
 
 .headerPanel-Left {
   display: flex;
@@ -399,7 +433,7 @@ border-radius: 1.5em;
   justify-content: center;
   padding: 10px 20px;
   border-radius: 15px;
-  font-size: 16px;
+  font-size: 1em;
   color: white;
   background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
   border: none;
@@ -433,7 +467,7 @@ border-radius: 1.5em;
   position: absolute;
   z-index: 1; 
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.05rem;
   border-radius: 0.5em;
   padding: 0.1em;
@@ -443,7 +477,7 @@ border-radius: 1.5em;
 
 #crearuser {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   text-align: center;
   text-wrap: nowrap;
@@ -865,6 +899,8 @@ footer {
   font-size: 13px;
   color: #EDEDED;
 }
+
+
 
 
 
