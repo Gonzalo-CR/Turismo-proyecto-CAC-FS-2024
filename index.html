@@ -112,32 +112,39 @@
                                 <input id="search-input" class="headerSearch-input" type="search" placeholder="Buscar aquí" required autocomplete="off" aria-autocomplete="both" aria-labelledby="" autocorrect="off" enterkeyhint="go" spellcheck="false" aria-activedescendant="" aria-controls="" value=""   >
                             </div>
                         </div>
+                        <!-- SMALL MENU_EXPLORER -->
+                        <div class="smallMenu-Explorer">
+                            <a id="smallexplorerItem" class="explorerItem nav-item" href="#">
+                                <img class="explorerItem icono" src="img/Small-menu.png" width="25px" height="25px" alt="Explore" title="Explore">
+                                
+                            </a>
+                        </div>
+                        <span class="menuSeparador"></span>
                     </div>
                 </div>
                      <!-- PANEL DERECHO DE LA BARRA DE NAVEGACIÓN -->
-                    <div class="headerPanel-Right">
-                        
-                        <span class="menuSeparador"></span>
-                        <div class="inicio-sesion" >
-                            <button id="loginButton" class="inicio-sesion-boton instagram-button" type="button">
-                                <i class="fa fa-home"></i>Inicio
-                            </button>
-                            <div id="loginForm">
-                                <form action="/login" method="post">
-                                    <label for="username">Usuario:</label><br>
-                                    <input type="text" id="username" name="username" required><br>
-                                    <label for="password">Contraseña:</label><br>
-                                    <input type="password" id="password" name="password" requiered><br><br>
-                                    <input type="submit" value="Iniciar sesión">
-                                </form>
-                                <br>
-                                <div id="crearuser">
+                <div class="headerPanel-Right">
+                    <span class="menuSeparador"></span>
+                    <div class="inicio-sesion" >
+                        <button id="loginButton" class="inicio-sesion-boton instagram-button" type="button">
+                            <i class="fa fa-home"></i>Inicio
+                        </button>
+                        <div id="loginForm">
+                            <form action="/login" method="post">
+                                <label for="username">Usuario:</label><br>
+                                <input type="text" id="username" name="username" required><br>
+                                <label for="password">Contraseña:</label><br>
+                                <input type="password" id="password" name="password" requiered><br><br>
+                                <input type="submit" value="Iniciar sesión">
+                            </form>
+                            <br>
+                            <div id="crearuser">
                                 <a href="/forgot-password">¿Olvidaste tu contraseña?</a><br>
                                 <a href="crear-usuario.html" target="_blank">Crear Usuario</a>
-                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
                         <div id="menuPanel">
                             <div class="panel_desplegable" id="paneldesplegable">
