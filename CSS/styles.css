@@ -248,7 +248,10 @@ h1 {
   display: none !important;
   }
 
-  
+  /* #paneldesplegable {
+    display: none;
+  }
+   */
   .panel_desplegable {
     display: flex;
     flex-direction: column;
@@ -734,11 +737,10 @@ article {
   text-wrap: nowrap;
   flex-wrap: wrap;
   font-family: 'Arial Narrow Bold', sans-serif;
-  position: relative;
   background-color: transparent;
   color: #EDEDED;
   font-weight: 600;
-  text-decoration: none ;
+  text-decoration: none !important;
 }
 
 
@@ -819,10 +821,8 @@ article {
   text-wrap: nowrap;
   flex-wrap: wrap;
   font-family: 'Arial Narrow Bold', sans-serif;
-  position: relative;
   background-color: transparent;
   border-radius: 0.5em;
-  z-index: 1;
 }
 
 
@@ -864,6 +864,7 @@ article {
   }
 
 }
+
 
 .nav-item {
 transition: transform 0.3s ease-in-out;
@@ -911,6 +912,8 @@ footer {
   font-size: 13px;
   color: #EDEDED;
 }
+
+
 
 
 
